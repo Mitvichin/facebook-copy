@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import "./mocks/startWorker";
+import React, { useEffect } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import './mocks/startWorker';
 
 function App() {
   useEffect(() => {
-    fetch("/user").then(async (res) => console.log(await res.json()));
+    fetch('/user').then(async (res) => console.log(await res.json()));
   }, []);
   return (
     <div className="App">
